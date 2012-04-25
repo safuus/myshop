@@ -21,7 +21,7 @@ module Spree
       end
 
       def image_attributes
-        [:id, :position, :attachment_content_type, :attachment_file_name, :type, :attachment_updated_at, :attachment_width, :attachment_height, :alt]
+        [:id, :position, :attachment_content_type, :attachment_width, :attachment_height, :alt, :url]
       end
 
       def option_value_attributes
