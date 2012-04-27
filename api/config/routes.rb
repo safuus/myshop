@@ -40,6 +40,8 @@ Spree::Core::Engine.routes.prepend do
       end
 
       resources :countries, :only => [:index, :show]
+      
+      resources :taxons
     end
   end
 end
