@@ -6,8 +6,10 @@ module Spree
           @taxons = Taxon.roots
         end
 
+#This is to return all products associated with a taxon
         def show
-          Taxon.to_text
+          @taxon = Taxon.find(params[:id])
+          @products = @taxon.products
         end
 
       end
